@@ -17,7 +17,10 @@ function createTrainingData() {
     }
   }
 
-  const xTensor = tf.tensor4d(xs, [xs.length, 28, 28, 1]);
+  const xTensor = tf.tensor4d(
+    xs.flat(),
+    [xs.length, 28, 28, 1],
+  );
   const labelIds = tf.tensor1d(labels, 'int32');
   const yTensor = tf.oneHot(labelIds, 10);
   labelIds.dispose();
