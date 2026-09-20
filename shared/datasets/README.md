@@ -36,3 +36,19 @@ MNIST database of handwritten digits, created from NIST data and commonly attrib
 The image asset stores 65,000 flattened 28 x 28 grayscale examples as a PNG sprite with width 784 pixels and one dataset example per sprite row. The label asset stores 65,000 one-hot vectors with 10 bytes per example.
 
 These copies are checked into the companion repository so the book examples and CI use stable local assets rather than depending on a live external request.
+
+## Fashion-MNIST
+
+Files:
+- `fashion-mnist/train-images-idx3-ubyte.gz`
+- `fashion-mnist/train-labels-idx1-ubyte.gz`
+- `fashion-mnist/t10k-images-idx3-ubyte.gz`
+- `fashion-mnist/t10k-labels-idx1-ubyte.gz`
+
+Source:
+Zalando Research Fashion-MNIST repository:
+https://github.com/zalandoresearch/fashion-mnist
+
+Fashion-MNIST contains 60,000 training images and 10,000 test images. Each example is a 28 x 28 grayscale image belonging to one of ten clothing classes.
+
+The companion repository retains the original gzip-compressed IDX representation so the assignment teaches browser decompression, IDX parsing, normalization, one-hot encoding and CNN training from the source dataset format.
