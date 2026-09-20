@@ -15,6 +15,6 @@ Classes:
 8 Bag
 9 Ankle boot
 
-The browser implementation decompresses the original IDX gzip files, parses IDX headers, normalizes 28×28 grayscale images, one-hot encodes labels, trains a CNN, visualizes training, evaluates held-out test data, and displays a real test image with its expected and predicted class.
+The browser implementation decompresses the original IDX gzip files, parses IDX headers, normalizes 28×28 grayscale images, one-hot encodes labels, trains a CNN for five epochs, visualizes training, evaluates held-out test data, and displays a real test image with its expected and predicted class.
 
 The automated gate requires at least 70% held-out accuracy on the 500-example teaching test slice.
