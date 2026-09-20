@@ -40,3 +40,9 @@ The automated checks verify that:
 - the runtime contains no `model.fit()` training step;
 - the model loads successfully in Chromium;
 - inference returns the expected predictions.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/bb72a352bad434c0bb02be6ccb730e313660d68c
