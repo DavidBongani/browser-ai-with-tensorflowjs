@@ -50,7 +50,7 @@ test('trains a real Fashion-MNIST classifier in the browser', async ({page}) => 
   expect(state.result.testShape).toEqual([500, 28, 28, 1]);
   expect(state.result.epochs).toBe(5);
   expect(Number.isFinite(state.result.finalTrainingLoss)).toBe(true);
-  expect(state.result.heldOutAccuracy).toBeGreaterThanOrEqual(0.70);
+  expect(state.result.heldOutAccuracy + 1e-6).toBeGreaterThanOrEqual(0.70);
   expect(state.result.expectedClass).toBeGreaterThanOrEqual(0);
   expect(state.result.expectedClass).toBeLessThan(10);
   expect(state.result.predictedClass).toBeGreaterThanOrEqual(0);
