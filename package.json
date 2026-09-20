@@ -1,0 +1,24 @@
+{
+  "name": "browser-ai-with-tensorflowjs",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source companion repository for Browser AI with TensorFlow.js.",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:browser",
+    "test:unit": "vitest run",
+    "test:browser": "playwright test",
+    "test:lesson": "node scripts/test-lesson.mjs",
+    "check": "npm run test"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.0",
+    "vitest": "3.2.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
