@@ -7,9 +7,9 @@ import {
   createMnistModel,
 } from './model.js';
 
-const TRAIN_COUNT = 6000;
+const TRAIN_COUNT = 3000;
 const TEST_START = 55000;
-const TEST_COUNT = 1000;
+const TEST_COUNT = 500;
 
 function getEvaluationMetrics(result) {
   const values = Array.isArray(result) ? result : [result];
@@ -181,7 +181,7 @@ async function main() {
     trainData.xs,
     trainData.ys,
     {
-      epochs: 4,
+      epochs: 3,
       batchSize: 128,
       shuffle: true,
       verbose: 0,

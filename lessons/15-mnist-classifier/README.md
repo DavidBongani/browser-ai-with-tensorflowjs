@@ -4,9 +4,9 @@ This is the cumulative MNIST browser project for Module 2.
 
 It:
 
-- loads 6,000 real MNIST training examples from the checked-in sprite;
-- loads 1,000 held-out examples from the official test portion beginning at row 55,000;
-- trains the Module 2 CNN for four epochs;
+- loads 3,000 real MNIST training examples from the checked-in sprite;
+- loads 500 held-out examples from the official test portion beginning at row 55,000;
+- trains the Module 2 CNN for three epochs;
 - visualizes training with tfjs-vis;
 - evaluates held-out accuracy;
 - renders a real held-out digit into a 280×280 drawing canvas;
