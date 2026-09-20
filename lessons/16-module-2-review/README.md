@@ -1,14 +1,14 @@
 # Lesson 16 — Module 2 Review
 
-This is an original self-check for the book. It does not reproduce proprietary quiz wording.
+This is an original self-check covering the Module 2 skills:
 
-It reviews:
-
-- convolutional input/output shapes;
-- filters, kernels and pooling;
+- convolutional model structure;
+- convolution and pooling shape reasoning;
 - tfjs-vis training callbacks;
-- MNIST sprite geometry;
-- image and label tensor contracts;
-- pixel normalization;
+- MNIST sprite storage and loading;
+- normalized image tensors;
 - tf.tidy() memory management;
-- Canvas preprocessing and repeated inference stability.
+- Canvas inference with tf.browser.fromPixels();
+- held-out accuracy gates.
+
+It does not reproduce proprietary quiz text from the external course.

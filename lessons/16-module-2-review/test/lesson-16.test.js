@@ -6,15 +6,15 @@ describe('Module 2 self-check', () => {
     expect(QUESTIONS).toHaveLength(12);
   });
 
-  it('scores a complete correct response set', () => {
-    const responses = QUESTIONS.map(question => question.correctIndex);
-    const score = scoreResponses(responses);
-
+  it('scores a completely correct response set', () => {
+    const score = scoreResponses(
+      QUESTIONS.map(question => question.correctIndex),
+    );
     expect(score.correct).toBe(12);
     expect(score.total).toBe(12);
   });
 
-  it('rejects incomplete answer arrays', () => {
+  it('rejects incomplete answers', () => {
     expect(() => scoreResponses([0])).toThrow(
       'One response is required',
     );
