@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { QUESTIONS, scoreResponses } from '../questions.js';
+import {
+  QUESTIONS,
+  scoreResponses,
+} from '../questions.js';
 
 describe('Module 2 self-check', () => {
   it('contains twelve original review questions', () => {
@@ -7,14 +10,14 @@ describe('Module 2 self-check', () => {
   });
 
   it('scores a completely correct response set', () => {
-    const score = scoreResponses(
-      QUESTIONS.map(question => question.correctIndex),
-    );
+    const answers = QUESTIONS.map(question => question.correctIndex);
+    const score = scoreResponses(answers);
+
     expect(score.correct).toBe(12);
     expect(score.total).toBe(12);
   });
 
-  it('rejects incomplete answers', () => {
+  it('rejects incomplete responses', () => {
     expect(() => scoreResponses([0])).toThrow(
       'One response is required',
     );

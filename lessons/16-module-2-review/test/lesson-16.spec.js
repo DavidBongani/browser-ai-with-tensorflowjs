@@ -14,12 +14,13 @@ test.beforeAll(async () => {
   server = spawn('python3', [
     '-m', 'http.server', '4188', '--directory', repoRoot,
   ], {stdio: 'ignore'});
+
   await new Promise(resolve => setTimeout(resolve, 1000));
 });
 
 test.afterAll(() => server?.kill());
 
-test('renders and scores the Module 2 review', async ({page}) => {
+test('renders and scores the Module 2 self-check', async ({page}) => {
   await page.goto(
     'http://127.0.0.1:4188/lessons/16-module-2-review/',
   );
@@ -30,16 +31,19 @@ test('renders and scores the Module 2 review', async ({page}) => {
 
   const correctIndexes = [
     1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 0, 1,
+    1, 1, 1, 1, 0, 0,
   ];
 
   for (let index = 0; index < correctIndexes.length; index += 1) {
     await page.locator(
-      `input[name="question-${index}"][value="${correctIndexes[index]}"]`,
+      'input[name="question-' + index + '"][value="' +
+      correctIndexes[index] + '"]',
     ).check();
   }
 
-  await page.getByRole('button', {name: 'Score answers'}).click();
+  await page.getByRole('button', {
+    name: 'Score answers',
+  }).click();
 
   const score = await page.evaluate(
     () => window.__LESSON_16_RESULT__,
