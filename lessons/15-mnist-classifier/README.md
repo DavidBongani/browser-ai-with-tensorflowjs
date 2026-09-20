@@ -6,7 +6,7 @@ It:
 
 - loads 3,000 real MNIST training examples from the checked-in sprite;
 - loads 500 held-out examples from the official test portion beginning at row 55,000;
-- trains the Module 2 CNN for four epochs;
+- trains the Module 2 CNN for three epochs;
 - visualizes training with tfjs-vis;
 - evaluates held-out accuracy;
 - renders a real held-out digit into a 280×280 drawing canvas;

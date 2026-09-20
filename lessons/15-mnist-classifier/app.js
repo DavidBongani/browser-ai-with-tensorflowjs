@@ -181,7 +181,7 @@ async function main() {
     trainData.xs,
     trainData.ys,
     {
-      epochs: 4,
+      epochs: 3,
       batchSize: 128,
       shuffle: true,
       verbose: 0,
