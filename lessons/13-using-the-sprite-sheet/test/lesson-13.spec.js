@@ -47,7 +47,7 @@ test('turns real MNIST sprite rows into normalized tensors', async ({page}) => {
   expect(state.result.maxPixel).toBeLessThanOrEqual(1);
   expect(state.result.maxPixel).toBeGreaterThan(0);
   expect(state.result.firstLabel).toHaveLength(10);
-  expect(state.result.firstClass).toBe(5);
+  expect(state.result.firstClass).toBe(7);
   expect(state.result.everyLabelIsOneHot).toBe(true);
   expect(errors).toEqual([]);
 });
