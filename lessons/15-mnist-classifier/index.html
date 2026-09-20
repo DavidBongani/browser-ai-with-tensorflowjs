@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 15 — MNIST Classifier</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+  <style>
+    #draw {
+      border: 1px solid #888;
+      touch-action: none;
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MNIST Classifier in the Browser</h1>
+    <p id="status">Loading MNIST…</p>
+    <div id="charts"></div>
+
+    <h2>Draw a digit</h2>
+    <canvas id="draw" width="280" height="280"></canvas>
+    <div>
+      <button id="classify" type="button" disabled>Classify drawing</button>
+      <button id="clear" type="button" disabled>Clear</button>
+    </div>
+    <p id="prediction"></p>
+    <pre id="output"></pre>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
