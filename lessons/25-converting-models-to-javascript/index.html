@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 25 — Converting Models to JavaScript</title>
+</head>
+<body>
+  <main>
+    <h1>Converting Models to JavaScript</h1>
+    <p>
+      TensorFlow.js Converter turns supported Python TensorFlow/Keras models
+      into browser-loadable JSON plus binary weight shards.
+    </p>
+    <label>
+      Source format
+      <select id="format">
+        <option value="keras">Keras HDF5</option>
+        <option value="savedModel">TensorFlow SavedModel</option>
+      </select>
+    </label>
+    <pre id="command"></pre>
+    <pre id="artifacts"></pre>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
