@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 21 — MobileNet</title>
+</head>
+<body>
+  <main>
+    <h1>MobileNet</h1>
+    <p>
+      MobileNet is designed for efficient image classification on devices with
+      limited compute. A key idea is replacing many standard convolutions with
+      depthwise separable convolutions.
+    </p>
+
+    <label>
+      Kernel size
+      <input id="kernel" type="number" min="1" value="3" />
+    </label>
+    <label>
+      Input channels
+      <input id="input-channels" type="number" min="1" value="32" />
+    </label>
+    <label>
+      Output channels
+      <input id="output-channels" type="number" min="1" value="64" />
+    </label>
+
+    <button id="compare" type="button">Compare</button>
+    <pre id="output"></pre>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
