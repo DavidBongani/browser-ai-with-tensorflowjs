@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 19 — Toxicity Classifier</title>
+</head>
+<body>
+  <main>
+    <h1>Toxicity Classifier</h1>
+    <p>
+      A toxicity classifier can return several label-specific predictions for
+      the same sentence. Each result includes two probabilities and a thresholded
+      match value.
+    </p>
+    <label>
+      Confidence threshold
+      <input id="threshold" type="range" min="0.5" max="0.99" step="0.01" value="0.90" />
+    </label>
+    <output id="threshold-value">0.90</output>
+    <div id="results"></div>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
