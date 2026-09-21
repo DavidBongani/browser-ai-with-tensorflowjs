@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 22 — Using MobileNet</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Using MobileNet</h1>
+    <p>The browser loads a pretrained MobileNet and classifies image pixels.</p>
+    <canvas id="sample" width="224" height="224"></canvas>
+    <button id="classify" type="button">Classify sample</button>
+    <p id="status">Loading MobileNet…</p>
+    <pre id="output"></pre>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
