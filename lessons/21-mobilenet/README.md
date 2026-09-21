@@ -37,3 +37,9 @@ That is about an 87.3% reduction in convolution parameters for this layer.
 
 This lesson explains the architectural idea behind MobileNet. The next lesson,
 Using MobileNet, will load and apply the pretrained model in the browser.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/7ff62d6dbb942d192dae7dc9352bc9f321682c89
