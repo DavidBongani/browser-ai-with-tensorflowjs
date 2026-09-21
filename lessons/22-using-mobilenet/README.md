@@ -19,3 +19,9 @@ inference only.
 
 The browser test verifies that the real model loads and returns three finite,
 ranked prediction objects from actual canvas pixels.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/087883f23edcacedebb078b60564dd4fd040725e
