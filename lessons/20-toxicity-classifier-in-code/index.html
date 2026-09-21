@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 20 — Toxicity Classifier In Code</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2/dist/toxicity.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Toxicity Classifier In Code</h1>
+    <p>This page loads the real TensorFlow.js toxicity model and classifies text in the browser.</p>
+    <textarea id="text" rows="5" cols="60">You are wonderful.</textarea>
+    <button id="classify" type="button">Classify</button>
+    <p id="status">Loading model…</p>
+    <pre id="output"></pre>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
