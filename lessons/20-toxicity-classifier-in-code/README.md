@@ -24,3 +24,9 @@ downloads the pretrained model assets and performs inference.
 The automated browser test verifies that the real model loads, classifies text,
 returns the expected seven toxicity labels, and emits two finite probabilities
 for every label.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/e0d8c38a707b204aa14b6cfbe2d7d65905cf4bad
