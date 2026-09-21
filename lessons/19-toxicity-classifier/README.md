@@ -20,3 +20,9 @@ threshold behaviour is visible and deterministic. The next lesson loads the
 actual TensorFlow.js toxicity model and performs classification.
 
 The TensorFlow.js toxicity package is `@tensorflow-models/toxicity`.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/bbb9468cd8507ab66ed9745939b39f8f0adaa377
