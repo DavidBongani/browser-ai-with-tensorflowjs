@@ -20,3 +20,9 @@ loader, such as `tf.loadLayersModel()` or `tf.loadGraphModel()`.
 
 This lesson focuses on the conversion contract and command structure. Lesson 26
 performs a real conversion and verifies the generated JavaScript model.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/134b84320b31a378a1f27fed1408979098234a6a
