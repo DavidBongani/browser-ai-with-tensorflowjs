@@ -17,3 +17,9 @@ This is inference with pretrained weights. The application does not call
 
 The automated browser gate executes the complete example with the real model
 and verifies that all three returned predictions are also rendered to the DOM.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/6eaa9f7c79355e6ce537b54586083e4ab94a0311
