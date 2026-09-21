@@ -183,7 +183,7 @@ async function main() {
     {
       epochs: 3,
       batchSize: 128,
-      shuffle: true,
+      shuffle: false,
       verbose: 0,
       callbacks,
     },
@@ -316,3 +316,4 @@ main().catch(error => {
   window.__LESSON_15_ERROR__ =
     error instanceof Error ? error.message : String(error);
 });
+
