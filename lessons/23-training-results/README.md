@@ -16,3 +16,9 @@ is correct. Close top scores indicate more ambiguity than a large gap.
 The example uses three MobileNet-shaped prediction objects so the result
 interpretation is deterministic. Lesson 24 combines this presentation logic
 with the real pretrained MobileNet browser model.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/11b0b890abfaf337f9662b953a616158e292a694
