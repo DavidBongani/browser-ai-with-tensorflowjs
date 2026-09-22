@@ -46,3 +46,9 @@ browser test requires training to reduce the loss substantially and reach high
 classification accuracy.
 
 Lesson 34 connects the transfer-learning pipeline to captured examples.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/ac2b844210fc15064e95a60a3a460e8884dc79d6
