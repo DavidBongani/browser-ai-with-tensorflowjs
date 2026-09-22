@@ -31,4 +31,6 @@ jobs:
       - run: git diff --exit-code -- lessons/27-linear-example-in-code/web-model lessons/27-linear-example-in-code/training-evidence.json
       - run: python lessons/29-python-model-conversion-lab/python/build_and_convert.py
       - run: git diff --exit-code -- lessons/29-python-model-conversion-lab/web-model lessons/29-python-model-conversion-lab/lab-evidence.json
+      - run: python lessons/30-converting-python-model-assignment/python/train_convert_classifier.py
+      - run: git diff --exit-code -- lessons/30-converting-python-model-assignment/web-model lessons/30-converting-python-model-assignment/assignment-evidence.json
       - run: npm test
