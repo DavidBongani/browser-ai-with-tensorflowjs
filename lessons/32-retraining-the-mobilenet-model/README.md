@@ -48,3 +48,9 @@ The browser example:
 6. verifies the new classifier's output shape.
 
 The training procedure itself is added in Lesson 33.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/f46d8f696f32d64894ff4365e40f219868180d5b
