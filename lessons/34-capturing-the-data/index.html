@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 34 — Capturing the Data</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Capturing the Data</h1>
+
+    <canvas
+      id="sample"
+      width="224"
+      height="224"
+      aria-label="Example image surface"
+    ></canvas>
+
+    <div id="capture-controls">
+      <button type="button" data-class-id="0">
+        Capture class 1
+      </button>
+      <button type="button" data-class-id="1">
+        Capture class 2
+      </button>
+      <button type="button" data-class-id="2">
+        Capture class 3
+      </button>
+    </div>
+
+    <p id="status">Loading MobileNet…</p>
+    <output id="counts">0 / 0 / 0</output>
+    <pre id="latest"></pre>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
