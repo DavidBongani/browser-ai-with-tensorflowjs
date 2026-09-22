@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 27 — Linear Example In Code</title>
+  <script src="/node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Linear Example In Code</h1>
+    <p>
+      A Python model learns the rule <code>y = 3x + 1</code>,
+      is converted to TensorFlow.js, and is executed again in the browser.
+    </p>
+    <p id="status">Loading trained converted model…</p>
+    <pre id="evidence"></pre>
+    <output id="prediction"></output>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

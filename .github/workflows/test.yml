@@ -1,4 +1,4 @@
-name: Test companion code
+﻿name: Test companion code
 
 on:
   push:
@@ -27,4 +27,6 @@ jobs:
       - run: python -m pip install --no-deps tensorflowjs==4.22.0
       - run: python lessons/26-converting-models-to-javascript-in-code/python/create_and_convert.py
       - run: git diff --exit-code -- lessons/26-converting-models-to-javascript-in-code/web-model
+      - run: python lessons/27-linear-example-in-code/python/train_and_convert.py
+      - run: git diff --exit-code -- lessons/27-linear-example-in-code/web-model lessons/27-linear-example-in-code/training-evidence.json
       - run: npm test

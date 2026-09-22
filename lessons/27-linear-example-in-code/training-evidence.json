@@ -1,0 +1,7 @@
+{
+  "pythonPredictionAt4": 12.999996185302734,
+  "finalLoss": 1.3163311586572579e-11,
+  "learnedWeight": 2.999999761581421,
+  "learnedBias": 0.9999967813491821,
+  "expectedRule": "y = 3x + 1"
+}
