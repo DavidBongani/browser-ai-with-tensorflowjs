@@ -1,4 +1,4 @@
-# Lesson 30 Ã¢â‚¬â€ Programming Assignment: Converting a Python Model to JavaScript
+# Lesson 30 — Programming Assignment: Converting a Python Model to JavaScript
 
 This original programming assignment closes Module 3 by requiring the complete
 Python-to-browser workflow on a trained classifier.
