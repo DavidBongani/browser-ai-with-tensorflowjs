@@ -59,3 +59,9 @@ Scissors application.
 ## Source code
 
 The complete source for this lesson is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/350721e6e7a8ce7930991a0c40c7d23d73d68f88
