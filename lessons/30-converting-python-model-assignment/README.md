@@ -1,4 +1,4 @@
-# Lesson 30 — Programming Assignment: Converting a Python Model to JavaScript
+# Lesson 30 â€” Programming Assignment: Converting a Python Model to JavaScript
 
 This original programming assignment closes Module 3 by requiring the complete
 Python-to-browser workflow on a trained classifier.
@@ -76,4 +76,4 @@ The assignment is complete only when:
 
 The complete implementation for this assignment is preserved at:
 
-https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/b00954c616323c5f9574e66b03522b3434b749bb
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/628e50d33ab2b3046cbe13a9499bbee7e0ad3fe8
