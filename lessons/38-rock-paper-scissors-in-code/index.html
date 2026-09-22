@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 38 — Rock Paper Scissors In Code</title>
+  <script src="/node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Rock Paper Scissors In Code</h1>
+
+    <button id="train" type="button">Train classifier</button>
+
+    <div id="moves">
+      <button type="button" data-move="rock">Rock</button>
+      <button type="button" data-move="paper">Paper</button>
+      <button type="button" data-move="scissors">Scissors</button>
+    </div>
+
+    <p id="status">Train the classifier first.</p>
+    <pre id="result"></pre>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
