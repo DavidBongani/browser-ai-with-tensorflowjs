@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 39 — Programming Assignment: Rock Paper Scissors</title>
+  <script src="/node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Programming Assignment: Rock Paper Scissors</h1>
+
+    <button id="train" type="button">Train classifier</button>
+    <button id="reset" type="button">Reset score</button>
+
+    <div id="moves">
+      <button type="button" data-move="rock">Rock</button>
+      <button type="button" data-move="paper">Paper</button>
+      <button type="button" data-move="scissors">Scissors</button>
+    </div>
+
+    <p id="status">Train the classifier first.</p>
+    <p id="score">Player 0 — Computer 0 — Draws 0</p>
+    <ol id="history"></ol>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
