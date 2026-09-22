@@ -49,3 +49,9 @@ round winner.
 ## Source code
 
 The complete source for this lesson is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/de78a7188bbe1cf259b75a8f2a4288f0847060a6
