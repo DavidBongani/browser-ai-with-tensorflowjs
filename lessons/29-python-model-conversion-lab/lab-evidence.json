@@ -1,0 +1,14 @@
+{
+  "input": [
+    3.0,
+    4.0
+  ],
+  "pythonOutput": [
+    7.0,
+    -1.0
+  ],
+  "operations": [
+    "sum = x0 + x1",
+    "difference = x0 - x1"
+  ]
+}

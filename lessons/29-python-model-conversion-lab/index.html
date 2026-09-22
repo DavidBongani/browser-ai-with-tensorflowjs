@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 29 — Python Model Conversion Lab</title>
+  <script src="/node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Python Model Conversion Lab</h1>
+    <p>
+      This lab converts a two-input, two-output TF-Keras model and checks that
+      browser inference matches Python.
+    </p>
+    <p id="status">Loading converted lab model…</p>
+    <pre id="evidence"></pre>
+    <output id="prediction"></output>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
