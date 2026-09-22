@@ -26,10 +26,10 @@
     ]
   ],
   "pythonProbabilities": [
-    0.9994354844093323,
-    0.0005645392229780555,
-    0.866427481174469,
-    0.13357248902320862
+    0.9994355,
+    0.0005645,
+    0.8664275,
+    0.1335725
   ],
   "expectedLabels": [
     1,
@@ -37,5 +37,6 @@
     1,
     0
   ],
-  "serializationPrecisionDecimals": 6
+  "serializationPrecisionDecimals": 6,
+  "probabilityPrecisionDecimals": 7
 }

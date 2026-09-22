@@ -30,6 +30,7 @@ describe('Lesson 30 conversion programming assignment', () => {
     expect(evidence.expectedLabels).toEqual([1, 0, 1, 0]);
     expect(evidence.pythonProbabilities).toHaveLength(4);
     expect(evidence.serializationPrecisionDecimals).toBe(6);
+    expect(evidence.probabilityPrecisionDecimals).toBe(7);
     expect(evidence.learnedBias).toBe(0);
 
     const labels = evidence.pythonProbabilities.map(

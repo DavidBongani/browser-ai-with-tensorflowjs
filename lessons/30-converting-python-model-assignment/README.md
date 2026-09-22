@@ -47,6 +47,8 @@ come from `model.fit()`. The normalization only gives the trained model one
 canonical serialized representation so Windows and Linux generate the same
 TensorFlow.js artifacts.
 
+The recorded Python probabilities are rounded to seven decimal places. This removes insignificant CPU-kernel differences from the evidence JSON; the browser still runs the raw converted model and must agree with those recorded probabilities within the existing 1e-5 parity tolerance.
+
 ## Verification points
 
 The assignment evaluates:

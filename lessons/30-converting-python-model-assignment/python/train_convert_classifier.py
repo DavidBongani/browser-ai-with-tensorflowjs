@@ -179,6 +179,7 @@ def train_classifier():
         "probabilities": probabilities,
         "expectedLabels": expected_labels,
         "serializationPrecisionDecimals": 6,
+        "probabilityPrecisionDecimals": 7,
     }
 
 
@@ -241,9 +242,13 @@ def main():
         "learnedWeights": weights[:, 0].tolist(),
         "learnedBias": float(bias[0]),
         "checks": result["checks"].tolist(),
-        "pythonProbabilities": result["probabilities"].tolist(),
+        "pythonProbabilities": [
+            round(float(value), result["probabilityPrecisionDecimals"])
+            for value in result["probabilities"]
+        ],
         "expectedLabels": result["expectedLabels"].tolist(),
         "serializationPrecisionDecimals": result["serializationPrecisionDecimals"],
+        "probabilityPrecisionDecimals": result["probabilityPrecisionDecimals"],
     }
 
     (LESSON_DIR / "assignment-evidence.json").write_text(
