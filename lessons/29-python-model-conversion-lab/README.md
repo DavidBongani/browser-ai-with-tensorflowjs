@@ -58,3 +58,9 @@ In `model.json`, identify:
 
 The browser test passes only when the converted model returns the same two
 numbers recorded by Python.
+
+## Implementation checkpoint
+
+The complete implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/f318ee6510aca8b6f1fed17c89a1fbea7812a70f
