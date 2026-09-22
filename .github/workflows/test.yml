@@ -15,6 +15,16 @@ jobs:
         with:
           node-version: 22
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.4'
+          cache: pip
+          cache-dependency-path: lessons/26-converting-models-to-javascript-in-code/python/requirements.txt
+
       - run: npm install
       - run: npx playwright install --with-deps chromium
+      - run: python -m pip install tensorflow==2.21.0 keras==3.15.1 tf-keras==2.21.0 h5py==3.14.0
+      - run: python -m pip install --no-deps tensorflowjs==4.22.0
+      - run: python lessons/26-converting-models-to-javascript-in-code/python/create_and_convert.py
+      - run: git diff --exit-code -- lessons/26-converting-models-to-javascript-in-code/web-model
       - run: npm test

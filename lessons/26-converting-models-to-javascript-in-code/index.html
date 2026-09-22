@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 26 — Converting Models to JavaScript In Code</title>
+  <script src="/node_modules/@tensorflow/tfjs/dist/tf.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Converting Models to JavaScript In Code</h1>
+    <p>
+      This page loads a model converted from Python TF-Keras into the
+      TensorFlow.js LayersModel format.
+    </p>
+    <p>Input: <code>[3, 4]</code></p>
+    <p>Expected rule: <code>y = 2x₀ − x₁ + 0.5</code></p>
+    <p id="status">Loading converted model…</p>
+    <output id="prediction"></output>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
