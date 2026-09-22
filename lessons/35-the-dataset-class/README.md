@@ -57,3 +57,9 @@ Lesson 36 uses this Dataset class to train a classifier from captured data.
 ## Source code
 
 The complete source for this lesson is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/a62971cbc8c708a9f466ca0961103ac93a179832
