@@ -59,3 +59,9 @@ on a new example.
 ## Source code
 
 The complete source for this lesson is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/71da5ebafd7fadd34186cbca1383b2acf726eead
