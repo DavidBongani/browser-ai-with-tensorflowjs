@@ -47,3 +47,9 @@ concept as a class label even when the image contains it.
 This is a fundamental limitation of pretrained classification models: their
 predictions are constrained by the categories represented in the model's
 training label space.
+
+## Implementation checkpoint
+
+The complete implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/dee280cf4c9409906461ecadd7ad315fc3ca86dd
