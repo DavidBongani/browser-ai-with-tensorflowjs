@@ -51,3 +51,9 @@ const model = await tf.loadLayersModel('./web-model/model.json');
 
 The automated tests verify the committed converter output and execute real
 Chromium inference against the converted model.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/554232d58732d4d585de062b84971b50a01178ad
