@@ -59,3 +59,9 @@ The assignment is complete only when:
 - the browser classifications are correct;
 - Python/browser probabilities agree;
 - the accumulated repository test suite remains green.
+
+## Source code
+
+The complete implementation for this assignment is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/b00954c616323c5f9574e66b03522b3434b749bb
