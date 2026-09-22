@@ -47,3 +47,9 @@ This completes the transfer-learning sequence and the course companion.
 ## Source code
 
 The complete source for this assignment is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this assignment is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/ea9ce00a08d68d1d475e54fc19c64435d7a15ad3
