@@ -1,12 +1,12 @@
 {
   "task": "classify whether x0 + x1 is positive",
   "trainingAccuracy": 1.0,
-  "trainingLoss": 0.04734359309077263,
+  "trainingLoss": 0.04734358191490173,
   "learnedWeights": [
-    1.8697339296340942,
-    1.8697339296340942
+    1.8697340488433838,
+    1.8697340488433838
   ],
-  "learnedBias": -8.5216029788171e-09,
+  "learnedBias": 0.0,
   "checks": [
     [
       3.0,
@@ -27,14 +27,15 @@
   ],
   "pythonProbabilities": [
     0.9994354844093323,
-    0.0005645394558086991,
+    0.0005645392229780555,
     0.866427481174469,
-    0.1335725039243698
+    0.13357248902320862
   ],
   "expectedLabels": [
     1,
     0,
     1,
     0
-  ]
+  ],
+  "serializationPrecisionDecimals": 6
 }

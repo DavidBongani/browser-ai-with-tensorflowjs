@@ -35,6 +35,18 @@ Run the reference solution:
 .\.venv\Scripts\python.exe lessons\30-converting-python-model-assignment\python\train_convert_classifier.py
 ```
 
+## Cross-platform serialization
+
+TensorFlow CPU kernels can differ by a few floating-point units across operating
+systems even when the same seeds and deterministic execution settings are used.
+The assignment therefore rounds the **learned** kernel and bias to six decimal
+places immediately after training and before conversion.
+
+This does not provide the model with the target solution. The parameters still
+come from `model.fit()`. The normalization only gives the trained model one
+canonical serialized representation so Windows and Linux generate the same
+TensorFlow.js artifacts.
+
 ## Verification points
 
 The assignment evaluates:

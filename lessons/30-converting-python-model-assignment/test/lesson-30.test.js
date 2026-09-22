@@ -29,6 +29,8 @@ describe('Lesson 30 conversion programming assignment', () => {
     ]);
     expect(evidence.expectedLabels).toEqual([1, 0, 1, 0]);
     expect(evidence.pythonProbabilities).toHaveLength(4);
+    expect(evidence.serializationPrecisionDecimals).toBe(6);
+    expect(evidence.learnedBias).toBe(0);
 
     const labels = evidence.pythonProbabilities.map(
       probability => (probability >= 0.5 ? 1 : 0),
@@ -50,6 +52,9 @@ describe('Lesson 30 conversion programming assignment', () => {
     expect(source).toContain('binary_crossentropy');
     expect(source).toContain('epochs=250');
     expect(source).toContain('shuffle=False');
+    expect(source).toContain('np.round(');
+    expect(source).toContain('layer.kernel.assign(');
+    expect(source).toContain('layer.bias.assign(');
     expect(source)
       .toContain('h5_merged_saved_model_to_tfjs_format');
     expect(source).toContain('write_artifacts');

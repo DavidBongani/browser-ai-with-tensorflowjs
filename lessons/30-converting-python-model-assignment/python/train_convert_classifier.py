@@ -102,6 +102,32 @@ def train_classifier():
         verbose=0,
     )
 
+    # TensorFlow can differ by a few ULPs across CPU kernels/operating systems.
+    # Canonicalise the learned parameters before serialization so the
+    # converted TensorFlow.js artifact is byte-for-byte reproducible without
+    # hard-coding the target solution.
+    layer = model.get_layer("positive_half_plane")
+    learned_kernel, learned_bias = layer.get_weights()
+
+    canonical_kernel = np.round(
+        learned_kernel,
+        decimals=6,
+    ).astype(np.float32)
+    canonical_bias = np.round(
+        learned_bias,
+        decimals=6,
+    ).astype(np.float32)
+
+    canonical_kernel[
+        np.abs(canonical_kernel) < 0.5e-6
+    ] = 0.0
+    canonical_bias[
+        np.abs(canonical_bias) < 0.5e-6
+    ] = 0.0
+
+    layer.kernel.assign(canonical_kernel)
+    layer.bias.assign(canonical_bias)
+
     loss, accuracy = model.evaluate(
         xs,
         ys,
@@ -152,6 +178,7 @@ def train_classifier():
         "checks": checks,
         "probabilities": probabilities,
         "expectedLabels": expected_labels,
+        "serializationPrecisionDecimals": 6,
     }
 
 
@@ -216,6 +243,7 @@ def main():
         "checks": result["checks"].tolist(),
         "pythonProbabilities": result["probabilities"].tolist(),
         "expectedLabels": result["expectedLabels"].tolist(),
+        "serializationPrecisionDecimals": result["serializationPrecisionDecimals"],
     }
 
     (LESSON_DIR / "assignment-evidence.json").write_text(
@@ -229,4 +257,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
