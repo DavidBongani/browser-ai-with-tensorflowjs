@@ -38,3 +38,9 @@ machine learning. Building the interface first lets you verify:
 
 That structure will remain in place as the remaining Module 4 lessons add the
 actual learning pipeline.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/827bc71d6bda12fba979b941bc25c0c9e3232368
