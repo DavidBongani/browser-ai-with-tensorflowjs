@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lesson 28 — Supported MobileNet Classes</title>
+</head>
+<body>
+  <main>
+    <h1>Supported MobileNet Classes</h1>
+    <p>
+      MobileNet classifies images using a fixed ImageNet vocabulary.
+      Search the exact class labels used by the model.
+    </p>
+
+    <p id="count"></p>
+
+    <label>
+      Search the class vocabulary
+      <input id="query" type="search" value="retriever" />
+    </label>
+
+    <button id="search" type="button">Search</button>
+    <ol id="results"></ol>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
