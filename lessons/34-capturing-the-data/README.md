@@ -63,3 +63,9 @@ collection and materialize training tensors.
 ## Source code
 
 The complete source for this lesson is preserved in this lesson directory.
+
+## Source code
+
+The complete source for this lesson is available at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/0c201b073285b09621a2a115d256aca2ea66a620
