@@ -56,3 +56,9 @@ for `x = 4`, and compares its result with the Python-side prediction stored in
 
 The lesson passes only when Python and browser predictions differ by no more
 than `1e-5`.
+
+## Implementation checkpoint
+
+The tested implementation for this lesson is preserved at:
+
+https://github.com/DavidBongani/browser-ai-with-tensorflowjs/commit/67c1acf1a48b17357fa733f74f90934b56a0f5cc
